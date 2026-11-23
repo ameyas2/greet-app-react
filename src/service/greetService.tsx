@@ -3,7 +3,7 @@ import type {Greet} from "../model/Greet.tsx";
 import type {GreetRequestDTO} from "../model/GreetRequestDTO.tsx";
 
 const api = axios.create({
-    baseURL: "https://srv2179062.hstgr.cloud/greet-service/api/greet",
+    baseURL: "https://api.meaneefy.com/greet-service/api/greet",
     headers: {
         "Content-Type": "application/json"
     }
