@@ -13,10 +13,10 @@ const GreetInfo = (props: GreetInfoProps) => {
         <>
             {greet && <div className="modal" id="greet-info-modal" popover="auto">
                 <div className="modal-box">
-                    <h3 className="font-bold text-2xl">{greet.header || greet.title}</h3>
+                    <h3 className="font-bold text-2xl">{greet.title}</h3>
                     <p className="py-4 text-lg font-bold">{greet.author}</p>
                     <p className="py-4 text-lg">{greet.description}</p>
-                    <p className="py-4 text-sm">{formatSlashDateTime(greet.time || greet.createdAt)}</p>
+                    <p className="py-4 text-sm">{formatSlashDateTime(greet.createdAt)}</p>
                 </div>
                 <div className="modal-backdrop">
                     <button popoverTarget="greet-info-modal" popoverTargetAction="hide">close</button>

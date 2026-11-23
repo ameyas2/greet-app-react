@@ -70,7 +70,7 @@ const EditGreet = () => {
 
             // Populate form fields
             reset({
-                title: response.header || response.title || "",
+                title: response.title || "",
                 description: response.description,
                 author: response.author
             });
